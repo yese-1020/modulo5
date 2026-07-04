@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const path = require("path");
+const peticionesRoutes = require("./src/routes/peticiones.routes");
 
 const app = express();
 
@@ -37,6 +38,8 @@ app.get("/estado", (req, res) => {
     mensaje: "Base del proyecto creada correctamente"
   });
 });
+
+app.use("/api/peticiones", peticionesRoutes);
 
 app.use((req, res) => {
   res.status(404).json({
