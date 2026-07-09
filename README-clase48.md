@@ -30,3 +30,4 @@ La conexión con n8n funciona en modo mock si no existe N8N_WEBHOOK_PETICION.
 ## Próxima clase
 
 Configurar n8n, DeepSeek, Google Docs, Google Sheets y Telegram.
+

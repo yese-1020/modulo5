@@ -1,11 +1,9 @@
 require("dotenv").config();
 
-
 const express = require("express");
 const path = require("path");
 const peticionesRoutes = require("./src/routes/peticiones.routes");
 const authRoutes = require("./src/routes/auth.routes");
-
 
 const app = express();
 
@@ -18,12 +16,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/api/peticiones", peticionesRoutes);
+app.use("/api/auth", authRoutes);
+
 app.get("/", (req, res) => {
   res.send(`
     <h1>${APP_NAME}</h1>
-    <h1>
-    <img src="./Imagenes/images.jpg" alt="Logo de la aplicación" width="100" height="100">
-    </h1>
+    <p>
+      <img src="./images/logo.avif" alt="Logo de la aplicación" width="200">
+    </p>
     <p>Proyecto final - Módulo 5</p>
     <p>Estado: aplicación base activa</p>
     <ul>
@@ -44,9 +45,6 @@ app.get("/estado", (req, res) => {
     mensaje: "Base del proyecto creada correctamente"
   });
 });
-
-app.use("/api/peticiones", peticionesRoutes);
-app.use("/api/auth", authRoutes);
 
 app.use((req, res) => {
   res.status(404).json({
