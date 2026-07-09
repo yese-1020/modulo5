@@ -1,8 +1,11 @@
 require("dotenv").config();
 
+
 const express = require("express");
 const path = require("path");
 const peticionesRoutes = require("./src/routes/peticiones.routes");
+const authRoutes = require("./src/routes/auth.routes");
+
 
 const app = express();
 
@@ -18,6 +21,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
   res.send(`
     <h1>${APP_NAME}</h1>
+    <h1>
+    <img src="./Imagenes/images.jpg" alt="Logo de la aplicación" width="100" height="100">
+    </h1>
     <p>Proyecto final - Módulo 5</p>
     <p>Estado: aplicación base activa</p>
     <ul>
@@ -40,6 +46,7 @@ app.get("/estado", (req, res) => {
 });
 
 app.use("/api/peticiones", peticionesRoutes);
+app.use("/api/auth", authRoutes);
 
 app.use((req, res) => {
   res.status(404).json({
