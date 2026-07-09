@@ -1,0 +1,8 @@
+Las metodologías ágiles ayudan a organizar mejor los proyectos porque permiten dividir el trabajo en tareas pequeñas y priorizadas.
+También facilitan la comunicación entre los integrantes del equipo y permiten mejorar continuamente el proceso.
+La automatización ayuda a reducir tareas repetitivas y permite responder más rápido a las solicitudes de la comunidad.
+Herramientas como n8n permiten conectar diferentes sistemas y generar alertas automáticas.
+Telegram puede servir como un canal rápido para recibir notificaciones y mantener informado al equipo encargado.
+Estas herramientas permiten dar seguimiento a los reportes y mejorar la transparencia del proceso.
+Una comunidad organizada puede atender mejor las necesidades de sus ciudadanos.
+La combinación de estas tecnologías facilita la participación ciudadana y la búsqueda de soluciones.
