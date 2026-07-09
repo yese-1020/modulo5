@@ -17,9 +17,9 @@ Rama GitHub: clase-51-login-roles
 
 ## Jurídico
 
-¿Por qué es importante controlar el acceso?
+¿Por qué es importante controlar el acceso?Porque protege la información y permite que cada usuario acceda solo a las funciones autorizadas según su rol.
 
-¿Qué diferencia hay entre ruta pública y ruta protegida?Porque protege la información y permite que cada usuario acceda solo a las funciones autorizadas según su rol.
+¿Qué diferencia hay entre ruta pública y ruta protegida?en la ruta publica cualquiera puede acceder en la privada requiere verificacion de entidad 
 
 ¿Qué límites tiene este login de práctica?Es un login básico de práctica; no ofrece la seguridad de un sistema real y solo sirve para aprender y realizar pruebas.
 
