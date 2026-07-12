@@ -9,6 +9,20 @@
 <body>
   <main>
     <h1>Generador de Derecho de Petición</h1>
+    <label for="tipoPeticion">Tipo de solicitud o ruta</label>
+<select id="tipoPeticion" name="tipoPeticion" required>
+  <option value="">Seleccione</option>
+  <option value="derecho_peticion">Derecho de petición general</option>
+  <option value="informacion_publica">Solicitud de información pública</option>
+  <option value="copias">Solicitud de copias</option>
+  <option value="estado_tramite">Solicitud de estado de trámite</option>
+  <option value="orientacion_ruta">Orientación sobre ruta institucional</option>
+  <option value="querella_policiva">Orientación para posible querella policiva</option>
+</select>
+
+<div id="ayudaTipoPeticion" class="aviso">
+  Seleccione un tipo de solicitud para ver una orientación inicial.
+</div>
 
     <p class="aviso">
       Este sistema genera un borrador editable de apoyo pedagógico.
